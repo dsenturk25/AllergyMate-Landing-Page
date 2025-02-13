@@ -1,0 +1,787 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  padding: 1% 2%;
+  margin: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(222, 229, 254);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-logo-wrapper {
+  width: 130px;
+  background-color: #f5f5f5;
+  border-radius: 0px 0px 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-action-wrapper {
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 0px 0px 0px 100px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-menu {
+  width: calc(100% - 488px);
+  padding: 0px 20px;
+  border-radius: 20px;
+  height: 100%;
+  background-color: rgb(222, 229, 254);
+  position: absolute;
+  left: 150px;
+  box-shadow: 0px -30px 0px 0px #f5f5f5;;
+}
+
+.header-install-button-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  filter: blur(12px);
+  position: absolute;
+  transition: all 2s ease-in-out 0s;
+}
+
+.header-action-install-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background-color: rgb(222, 229, 254);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-page-animation-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.header-menu-inner-wrapper {
+  width: calc(100% - 100px);
+  display: flex;
+  height: calc(100% - 30px);
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 50px;
+  margin: 15px 0px;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+}
+
+.inner-main-content {
+  background-color: rgb(222, 229, 254);
+  border-radius: 20px;
+}
+
+.inner-main-content-banner {
+  width: calc(100% - 10px);
+  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.each-start-page-banner-title-line {
+  font-size: 100px !important;
+  letter-spacing: 0px;
+  line-height: 12px;
+  font-weight: 300;
+  cursor: default;
+}
+
+.each-start-page-banner-title-line-h1 {
+  font-weight: 300;
+  color: rgb(44, 32, 42);
+}
+
+.partner-display-wrapper-start-page {
+  padding: 5px 20px 5px 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border-radius: 20px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 100px;
+}
+
+.start-page-product-socials-display-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.start-page-each-social-link {
+  margin: 10px 20px;
+}
+
+.how-it-works-title {
+  font-size: 100px;
+  color: i;
+  width: 100%;
+  height: 100%;
+}
+
+.absolute-bottom-spotlight-wrapper {
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  bottom: -25%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px 30px #fff;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 75%);
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.each-step-main-wrapper {
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 80%;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.each-step-main-wrapper-title {
+  font-size: 72px;
+  font-weight: 500;
+}
+
+.each-step-main-wrapper-explanation {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.each-product-display {
+  margin-top: -250px;
+  position: relative;
+}
+
+.each-product-display img {
+  position: absolute;
+  width: 100%;
+  left: 0; top: 0;
+  z-index: 20;
+}
+
+
+.each-product-display-content {
+  position: absolute;
+  width: 100%;
+  left: 0; 
+  top: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+
+.product-display-laptop-content {
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  margin-top: -100px;
+  overflow: hidden;
+}
+
+.product-display-laptop {
+  width: 410px;
+  height: 240px;
+  transform: perspective(800px) rotateX(20deg) rotateY(-20deg);
+  transform-origin: center;
+  display: flex;
+  display: none;
+}
+
+.display-profile-each-allergy-content {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: calc(50% - 15px);
+  aspect-ratio: 1/1;
+  margin: 5px;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.product-display-content-laptop-content-each-panel {
+  width: 48%;
+  height: 96%;
+  padding: 2%;
+  position: relative;
+  font-size: 12px;
+}
+
+.product-display-laptop-each-chat-content {
+  width: 75%;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.product-display-laptop-each-chat-message-box {
+  width: calc(100% - 9px);
+  height: 20px;
+  bottom: 10px;
+  left: 5px;
+  position: absolute;
+}
+
+.product-display-laptop-each-chat-message-box input {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  border: 0;
+  font-size: 12px;
+}
+
+.product-display-mobile-phone {
+  display: none;
+  width: 290px;
+  height: 450px;
+  transition: all 1s ease 0s;
+  transform: perspective(800px) rotateX(20deg) rotateY(20deg);
+  transform-origin: center;
+}
+
+
+.product-display-mobile-phone-content {
+  height: 430px;
+  width: 175px;
+  margin: 10px 40px;
+  border-radius: 10px;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.phone-scan-mode {
+  transform: perspective(800px) rotateX(60deg) rotateY(-20deg) rotateZ(30deg);
+  position: absolute;
+  left: -10%;
+  top: -15%;
+  z-index: 30;
+}
+
+.product-display-food-wrapper img {
+  position: relative;
+}
+
+.product-display-food-wrapper {
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+  display: flex;
+  align-items: baseline;
+  transition: all 1s ease-in-out 0s;
+  opacity: 0;
+}
+
+.each-step-main-foods-wrapper {
+  width: 120%;
+  height: fit-content;
+  background-color: rgb(44, 32, 41);
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+.food-analysis-div {
+  width: 25%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 2px solid rgb(44, 32, 42);
+  color: #000;
+  position: absolute;
+  transition: all 1s ease 0s;
+  left: 0%;
+  bottom: 25%;
+  padding: 20px;
+  z-index: 20 !important;
+}
+
+.each-food-wrapper {
+  height: calc(100% - 40px) !important;
+  width: 200px !important;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  font-size: 12px;
+  transition: all 1s ease 0s;
+  border-radius: 10px;
+}
+
+.each-step-main-prepare-diet-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.chef-hat {
+  font-size: 20px;
+}
+
+
+.result-allergic {
+  padding: 5px 10px;
+  border: 1px solid red;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.result-allergen-free {
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 255, 42, 1);
+  color: rgba(0, 255, 42, 1);
+  background-color: rgba(0, 255, 42, 0.25);
+  border-radius: 5px;
+}
+
+.community-people-main-wrapper {
+  width: 90%;
+  height: 50%;
+  padding: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 260px;
+  height: 160px;
+  background-color: rgb(44, 32, 42);
+  border-radius: 10px;
+  font-size: 14px;
+  color: rgb(222, 229, 254);
+  padding: 20px;
+}
+
+
+.phone_second_page_scanning_content {
+  background-color: #1E88E5;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-page-scanning-header {
+  margin-top: 50px;
+}
+
+.second-page-scanning-content {
+  width: calc(100% - 10px);
+  aspect-ratio: 1/1;
+}
+
+.second-page-scanning-footer {
+  width: calc(100% - 20px);
+  background-color: #343434;
+  font-size: 10px !important;
+  padding: 0px 10px;
+}
+
+.unique-value-section-main-wrapper {
+  width: calc(100% - 100px);
+  margin-top: calc(-50vh);
+  padding: 50px;
+  background-color: rgb(222, 229, 254);
+  border-radius: 50px;
+}
+
+.unique-value-section-title-wrapper {
+  background-color: rgb(44, 32, 41);
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.unique-value-main-title {
+  font-size: 32px;
+}
+
+.unique-value-main-description {
+  font-size: 18px;
+  width: 800px;
+}
+
+.unique-value-main-content-wrapper {
+  background-color: rgb(44, 32, 41);
+  display: flex;
+  border-radius: 30px;
+  z-index: 10;
+}
+
+.unique-value-main-content-navbar {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 50px;
+  padding: 50px;
+  font-size: 32px;
+  border-right: 1px dashed #fff;
+  width: 300px;
+}
+
+.unique-value-main-content-container {
+  flex-grow: 1;
+}
+
+.each-navbar-menu-item-unique-value {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.each-navbar-menu-item-unique-value span {
+  transition: all 0.5s ease 0s;
+}
+
+.mission-kpi-main-wrapper {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.mission-main-wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-main-content-wrapper {
+  width: 500px;
+  aspect-ratio: 1/1;
+  background-color: #f5f5f5;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.kpi-main-content-navbar {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.kpi-main-navbar-each-action {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: all 1s ease 0s;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+@keyframes expandWidth {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.kpi-main-content-progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin: 20px 0;
+  animation: expandWidth 16s ease-in-out infinite;
+}
+.progress-container {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.bg-circle {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 20;
+}
+
+.progress {
+  fill: none;
+  stroke: rgb(44, 32, 41);
+  stroke-width: 20;
+  stroke-dasharray: 1005; /* Circumference of the circle (2 * π * r) */
+  stroke-dashoffset: 1005;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.progress-number {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.contact-us-dynamic-text-animation-content {
+  transition: all 0.5s ease 0s;
+}
+
+.footer-main-wrapper {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer-download-wrapper {
+  height: fit-content;
+  padding: 100px 20%;
+  font-weight: 300;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(44, 32, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-download-pre-title {
+  font-size: 20px;
+  color: #eee;
+}
+
+.footer-download-main-title {
+  font-size: 64px;
+  color: rgb(222, 229, 254);
+}
+
+.footer-download-install-button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  width: 200px;
+  color: rgb(44, 32, 41);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.footer-download-install-button:hover {
+  filter: brightness(0.8);
+}
+
+.mission-main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-main-content-header {
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: all 1s ease 0s;
+}
+
+.mission-wrapper-dropdown-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.mission-wrapper-dropdown-content {
+  overflow: hidden;
+  margin: 5px;
+  transition: all 1s ease 0s;
+  width: calc(100% - 40px);
+  height: 0;
+  padding: 0;
+}
+
+.contact-us-main-wrapper {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  width: calc(100% - 40px);
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.main-contact-us-form input {
+  padding: 5px;
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  border: none;
+}
+
+.main-contact-us-form textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+
+.main-contact-us-form button {
+  padding: 5px;
+  width: calc(100%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.mission-wrapper-dropdown-arrow-content {
+  transition: all 1s ease 0.25s;
+}
+
+.footer-main-wrapper-final-wrapper {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 30px;
+}
+
+.food-analysis-soul-main-wrapper {
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 150;
+  display: none;
+}
+
+.bubble {
+    position: relative;
+    background: rgb(44, 32, 41);
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+    width: calc(250px - 30px);
+    height: calc(120px - 30px);
+    border-radius: 10px;
+    padding: 15px;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: rgb(44, 32, 41) transparent transparent transparent;
+    bottom: -20px;
+    left: 12%;
+    margin-left: -10px;
+}
+
+.soul-allergy-profile-wrapper {
+  border: 1px solid rgb(222, 229, 254);
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+  width: fit-content;
+}
+
+.soul-allergy-profile-each-allergy {
+  width: 20px;
+  height: 20px;
+}
+
+.soul-each-reaction-wrapper {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(222, 229, 254);
+  color: rgb(44, 32, 42);
+  position: absolute;
+  left: -40%;
+  top: 150%;
+  font-size: 16px;
+  transition: 0.5s ease-in-out 0s;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.blur-animation-motto-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(44, 32, 42);
+  height: fit-content;
+  padding: 70px 0px;
+  flex-direction: column;
+}
+
+.blur-animation-each-line-content {
+  position: relative;
+  font-size: 72px;
+  color: rgb(222, 229, 254);
+  font-weight: 200;
+}
+

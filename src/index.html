@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allergy Mate</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <script src="/public/js/index.js"></script>
+  <script src="/public/js/uniqueValue.js"></script>
+  <script src="/public/js/dashboard.js"></script>
+  <script src="/public/js/typingAnimation.js"></script>
+  <script src="/public/js/headerInstallButton.js"></script>
+  <script src="/public/js/language.js"></script>
+  <link rel="icon" type="image/x-icon" href="/public/res/favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <div class="header-logo-wrapper">
+      <img src="/public/res/logo.png" style="width: 75px; height: 75px;" alt="Allergy Mate">
+    </div>
+    <div class="header-menu">
+      <div class="header-menu-inner-wrapper">
+        <div data-key="how-it-works"></div>
+        <div data-key="features"></div>
+        <div data-key="investors"></div>
+        <div data-key="reach-us"></div>
+      </div>
+    </div>
+    <div class="header-action-wrapper">
+      <div class="header-action-install-button" id="header-install-button">
+        <span style="z-index: 20;" data-key="install-now"></span>
+        <span style="z-index: 20;" class="center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+      </div>
+      <div class="header-action-install-button" id="language-switch" style="background-color: #f5f5f5; cursor: pointer;">
+        <span data-key="language-id"></span>
+        <span class="center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+      </div>
+    </div>
+  </div>
+  <div class="inner-main-content">
+    <div class="inner-main-content-banner" id="inner-main-content-banner">
+      <div style="position: relative; z-index: 10;">
+        <div class="partner-display-wrapper-start-page">
+          <span class="center">
+            <img style="height: 20px;" src="/public/res/itucekirdek.png" alt="Allergy Mate">
+          </span>
+          <span style="margin-left: 12px; color: #444; font-weight: 400;" data-key="itu-seed-title"></span>
+        </div>
+        <div style="margin-top: -20px;">
+          <h1 class="each-start-page-banner-title-line"><span class="each-start-page-banner-title-line-h1" data-key="start-page-headline-1"></span></h1>
+          <h1 class="each-start-page-banner-title-line"> <span class="each-start-page-banner-title-line-h1" data-key="start-page-headline-2"></span>
+            <span style="font-weight: 200;display: inline-block;line-height: 24px; letter-spacing: 0; width: 500px; height: 100%; font-size: 20px !important;">
+              <div style="display: flex; color: #121FCF; font-weight: 400;"><span data-key="download-for"></span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#121FCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></div>
+              <ul style="margin: 0;">
+                <li>Iphone / Ipad</li>
+                <li>Android</li>
+              </ul>
+            </span>
+          </h1>
+          <h1 class="each-start-page-banner-title-line"><span class="each-start-page-banner-title-line-h1" data-key="start-page-headline-3"></span></h1>
+          <h1 class="each-start-page-banner-title-line"><span class="each-start-page-banner-title-line-h1" data-key="start-page-headline-4"></span> <span style="font-weight: 200;display: inline-block;line-height: 24px; letter-spacing: 0; width: 500px; height: 100%; font-size: 20px !important;" data-key="start-page-explanation"></span></h1>
+          <h1 class="each-start-page-banner-title-line"><span class="each-start-page-banner-title-line-h1" data-key="start-page-headline-5"></span></h1>
+        </div>
+      </div>
+      <div class="start-page-product-socials-display-wrapper">
+        <div class="start-page-each-social-link">
+          <a href="" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#000"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM8.951 9.404H6.165V17.5H8.95V9.404zm6.841-.192c-1.324 0-1.993.629-2.385 1.156l-.127.181V9.403h-2.786l.01.484c.006.636.007 1.748.005 2.93l-.015 4.683h2.786v-4.522c0-.242.018-.484.092-.657.202-.483.66-.984 1.43-.984.955 0 1.367.666 1.408 1.662l.003.168V17.5H19v-4.643c0-2.487-1.375-3.645-3.208-3.645zM7.576 5.5C6.623 5.5 6 6.105 6 6.899c0 .73.536 1.325 1.378 1.392l.18.006c.971 0 1.577-.621 1.577-1.398C9.116 6.105 8.53 5.5 7.576 5.5z"/></svg>
+          </a>
+        </div>
+        <div class="start-page-each-social-link">
+          <a href="" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#000"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm3.193 7c-1.586 0-2.872 1.243-2.872 2.777 0 .217.025.43.074.633a8.251 8.251 0 0 1-5.92-2.902c-.247.41-.389.887-.389 1.397 0 .963.507 1.813 1.278 2.311a2.94 2.94 0 0 1-1.301-.348v.036c0 1.345.99 2.467 2.304 2.723a2.98 2.98 0 0 1-1.298.047c.366 1.103 1.427 1.906 2.683 1.928a5.889 5.889 0 0 1-3.567 1.19c-.231 0-.46-.014-.685-.04A8.332 8.332 0 0 0 9.903 18c5.283 0 8.172-4.231 8.172-7.901 0-.12-.002-.24-.008-.36A5.714 5.714 0 0 0 19.5 8.302a5.869 5.869 0 0 1-1.65.437 2.8 2.8 0 0 0 1.263-1.536 5.87 5.87 0 0 1-1.824.674A2.915 2.915 0 0 0 15.193 7z"/></svg>
+          </a>
+        </div>
+        <div class="start-page-each-social-link">
+          <a href="" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#000"><path d="M12 0c6.6274 0 12 5.3726 12 12s-5.3726 12-12 12S0 18.6274 0 12 5.3726 0 12 0zm3.115 4.5h-6.23c-2.5536 0-4.281 1.6524-4.3805 4.1552L4.5 8.8851v6.1996c0 1.3004.4234 2.4193 1.2702 3.2359.7582.73 1.751 1.1212 2.8818 1.1734l.2633.006h6.1694c1.3004 0 2.389-.4234 3.1754-1.1794.762-.734 1.1817-1.7576 1.2343-2.948l.0056-.2577V8.8851c0-1.2702-.4234-2.3589-1.2097-3.1452-.7338-.762-1.7575-1.1817-2.9234-1.2343l-.252-.0056zM8.9152 5.8911h6.2299c.9072 0 1.6633.2722 2.2076.8166.4713.499.7647 1.1758.8103 1.9607l.0063.2167v6.2298c0 .9375-.3327 1.6936-.877 2.2077-.499.4713-1.176.7392-1.984.7806l-.2237.0057H8.9153c-.9072 0-1.6633-.2722-2.2076-.7863-.499-.499-.7693-1.1759-.8109-2.0073l-.0057-.2306V8.885c0-.9073.2722-1.6633.8166-2.2077.4712-.4713 1.1712-.7392 1.9834-.7806l.2242-.0057h6.2299-6.2299zM12 8.0988c-2.117 0-3.871 1.7238-3.871 3.871A3.8591 3.8591 0 0 0 12 15.8408c2.1472 0 3.871-1.7541 3.871-3.871 0-2.117-1.754-3.871-3.871-3.871zm0 1.3911c1.3609 0 2.4798 1.119 2.4798 2.4799 0 1.3608-1.119 2.4798-2.4798 2.4798-1.3609 0-2.4798-1.119-2.4798-2.4798 0-1.361 1.119-2.4799 2.4798-2.4799zm4.0222-2.3589a.877.877 0 1 0 0 1.754.877.877 0 0 0 0-1.754z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="height: 5000px; width: 100%; position: relative; z-index: 0;">
+      <div style="height: 100vh; width: 100%; top: 0; left: 0; background-color: #f5f5f5; position: absolute; transition: all 1s ease 0s;" id="animation-scroll-main-wrapper">
+        <div class="how-it-works-title center">
+          <div class="blur-animation-motto-wrapper center" id="blur-animation-motto-wrapper">
+            <div class="blur-animation-each-line-content" id="blur-animation-line-1" data-key="motto-line-1"></div>
+            <div class="blur-animation-each-line-content" id="blur-animation-line-2" data-key="motto-line-2"></div>
+          </div>
+          <div style="color: rgba(255,255,255,0); transition: color 0.5s ease 0.5s; text-transform: uppercase;" id="how-it-works-title-content" data-key="how-it-works"></div>
+
+          <div class="community-people-main-wrapper" id="orbit"></div>
+
+          <div class="absolute-bottom-spotlight-wrapper" id="table_display">
+            <div class="each-product-display product-display-mobile-phone" id="phone">
+              <img src="/public/res/phone.png" alt="phone" style="width: 290px !important; height: 450px;">
+              <div class="each-product-display-content product-display-mobile-phone-content" id="phone_first_page_profile_content">
+                <div class="display-profile-header">
+                  <div style="width: 100%; margin-left: -20px; padding: 0px 19px; height: 60px; background-color: rgb(44, 32, 42)"></div>
+                  <div style="display: flex; margin-top: -20px">
+                    <div style="width: 40px; height: 40px; position: relative; border-radius: 100%; overflow: hidden; border: 4px solid rgb(44, 32, 42);"><img style="width: 40px; height: 40px; top:0; left: 0; position: absolute;" src="/public/res/person1.png" alt="Allergy Mate"></div>
+                    <div style="margin-left: 20px; margin-top: -2px;">
+                      <div style="font-size: 14px; font-weight: bold; color: rgb(222, 229, 254); margin-bottom: 10px;">Vanessa</div>
+                      <div style="font-size: 10px; color: gray;" data-key="phone-profile-explanation"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="display-profile-textarea">
+                  <textarea style="padding: 10px; border: 0; height: 50px; width: calc(100% - 20px); resize: none; font-family: arial; font-size: 12px;" autofocus data-key="phone-text-area-content"></textarea>
+                </div>
+                <hr>
+                <div class="display-profile-allergies" style="display: flex; flex-wrap: wrap;">
+                  <div style="background-color: rgba(255, 235, 51, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">🥜</div>
+                    <div data-key="peanut"></div>
+                  </div>
+                  <div style="background-color: rgba(237, 127, 58, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">🥚</div>
+                    <div data-key="egg"></div>
+                  </div>
+                  <div style="background-color: rgba(168, 245, 255, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">🥛</div>
+                    <div data-key="dairy"></div>
+                  </div>
+                  <div style="background-color: rgba(113, 203, 255, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">🦪</div>
+                    <div data-key="shellfish"></div>
+                  </div>
+                  <div style="background-color: rgba(255, 113, 113, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">🐝</div>
+                    <div data-key="pollen"></div>
+                  </div>
+                  <div style="background-color: rgba(146, 234, 206, 0.2)" class="display-profile-each-allergy-content center">
+                    <div style="font-size: 20px">💨</div>
+                    <div data-key="dust"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="each-product-display-content product-display-mobile-phone-content phone_second_page_scanning_content" id="phone_second_page_scanning_content" style="display: none">
+                <div class="second-page-scanning-header">
+                  <h3>Allergy Mate AI Lens</h3>
+                  <p data-key="ai-lens-explanation"></p>
+                </div>
+                 <div class="second-page-scanning-content" style="position: relative; display: flex; align-items: baseline; border: 2px dashed #fff;">
+                    <img style="left: 0; top: 0; width: 100%; height: 100%;" src="/public/res/table.png" alt="AllergyMate">
+                    <img style="width: 100px; position: relative;" src="/public/res/milk.png" alt="Allergy Mate" class="second-page-scanning-object">
+                    <img style="width: 100px; height: 100px; position: relative; margin-left: -50px;" src="/public/res/pea.png" alt="Allergy Mate" class="second-page-scanning-object">
+                  </div>
+                <div class="second-page-scanning-footer">
+                  <h5 style="margin: 0;" data-key="ai-lens-result-title"></h5>
+                  <ul style="margin: 0;">
+                    <li style="font-size: 8px" data-key="ai-lens-result-1"></li>
+                    <li style="font-size: 8px" data-key="ai-lens-result-2"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="each-product-display product-display-laptop" id="laptop">
+              <div class="each-product-display-content product-display-laptop-content">
+                <div class="product-display-content-laptop-content-each-panel">
+                  <div class="product-display-laptop-each-chat-content" style="background-color: #eee" data-key="laptop-ai-text-1"></div>
+                  <div class="product-display-laptop-each-chat-content" style="background-color: rgb(222, 229, 254); margin-left: auto;" data-key="laptop-user-text"></div>
+                  <div class="product-display-laptop-each-chat-content" style="background-color: #eee" data-key="laptop-ai-text-2"></div>
+                  <div class="product-display-laptop-each-chat-message-box">
+                    <input type="text" placeholder="Send a message...">
+                  </div>
+                </div>
+                <div class="product-display-content-laptop-content-each-panel" style="justify-content: center; flex-wrap: wrap; align-items: center; display: flex;">
+                 
+                  <div class="progress-container" id="progress-container-mediatedAllergies" style="width: 110px; height: 110px;">
+                    <svg class="progress-circle" width="110" height="110">
+                      <circle class="bg-circle" style="stroke-width: 7" cx="55" cy="55" r="45"></circle>
+                      <circle class="progress progress-mediatedAllergies" cx="55" cy="55" r="45"></circle>
+                    </svg>
+                    <div class="progress-number progress-number-mediatedAllergies center"></div>
+                  </div>
+                  
+                  <div class="progress-container" id="progress-container-healthyDiets" style="width: 110px; height: 110px;">
+                    <svg class="progress-circle" width="110" height="110">
+                      <circle class="bg-circle" style="stroke-width: 7" cx="55" cy="55" r="45"></circle>
+                      <circle class="progress progress-healthyDiets" cx="55" cy="55" r="45"></circle>
+                    </svg>
+                    <div class="progress-number progress-number-healthyDiets center"></div>
+                  </div>
+                  
+                  <div class="progress-container" id="progress-container-preventedReactions" style="width: 110px; height: 110px;">
+                    <svg class="progress-circle" width="110" height="110">
+                      <circle class="bg-circle" style="stroke-width: 7" cx="55" cy="55" r="45"></circle>
+                      <circle class="progress progress-preventedReactions" cx="55" cy="55" r="45"></circle>
+                    </svg>
+                    <div class="progress-number progress-number-preventedReactions center"></div>
+                  </div>
+                                                   
+                  
+                </div>
+              </div>
+            </div>
+            <div class="each-product-display product-display-food-wrapper" id="scan-images">
+              <img src="/public/res/milk.png" alt="Allergy Mate">
+              <img style="margin-left: -150px;" src="/public/res/pea.png" alt="Allergy Mate">
+            </div>
+            <div class="food-analysis-soul-main-wrapper" id="soul-main-wrapper">
+              <div>
+                <img src="/public/res/soul.png" alt="Allergy Mate" style="width: 200px;">
+              </div>
+              <div class="bubble">
+                <div style="color: rgb(222, 229, 254)" data-key="soul-greeting-text"></div>
+                <div style="opacity: 0; transition: all 0.2s ease 0s">
+                  <div style="color: rgba(222, 229, 254, 0.75); font-size: 10px; margin: 5px 0px;" data-key="soul-allergy-profile-title"></div>
+                  <div class="soul-allergy-profile-wrapper">
+                    <img class="soul-allergy-profile-each-allergy" src="/public/res/allergens/0.png">
+                    <img class="soul-allergy-profile-each-allergy" src="/public/res/allergens/1.png">
+                    <img class="soul-allergy-profile-each-allergy" src="/public/res/allergens/2.png">
+                    <img class="soul-allergy-profile-each-allergy" src="/public/res/allergens/3.png">
+                    <img class="soul-allergy-profile-each-allergy" src="/public/res/allergens/4.png">
+                  </div>
+                </div>
+              </div>
+              <div class="soul-each-reaction-wrapper" id="soul-reaction-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unique-value-section-main-wrapper" style="position: relative;">
+      <div class="unique-value-section-title-wrapper">
+        <div class="unique-value-main-title" data-key="cutting-edge-features-title"></div>
+        <p class="unique-value-main-description" data-key="cutting-edge-features-explanation"></p>
+      </div>
+      <div class="unique-value-main-content-wrapper">
+        <div class="unique-value-main-content-navbar" id="uniqueValueNavbar">
+          <div class="each-navbar-menu-item-unique-value" id="allergyManagement">
+            <span style="opacity: 1; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+            <span style="opacity: 1;" data-key="features-ai"></span>
+          </div>
+          <div class="each-navbar-menu-item-unique-value" id="allergyDatabase">
+            <span style="opacity: 0; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+            <span style="opacity: 0.5;" data-key="features-db"></span>
+          </div>
+          <div class="each-navbar-menu-item-unique-value" id="realTimeScanning">
+            <span style="opacity: 0; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+            <span style="opacity: 0.5;" data-key="features-real-time"></span>
+          </div>
+          <div class="each-navbar-menu-item-unique-value" id="personalizedReports">
+            <div style="opacity: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></div>
+            <div style="opacity: 0.5;" data-key="features-reports"></div>
+          </div>
+          <div class="each-navbar-menu-item-unique-value" id="crossPlatformAccess">
+            <span style="opacity: 0; display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+            <span style="opacity: 0.5;" data-key="features-cross"></span>
+          </div>
+        </div>
+        <div id="uniqueValueContainer" class="unique-value-main-content-container center"></div>
+      </div>
+    </div>
+    <div class="mission-kpi-main-wrapper">
+      <div class="mission-main-wrapper">
+        <div class="mission-main-content">
+          <div class="mission-main-content-header" data-is_opened="false">
+            <div style="display: flex; align-items: center;">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+              <span class="mission-wrapper-dropdown-title" data-key="our-mission"></span>
+            </div>
+            <div class="mission-wrapper-dropdown-arrow-content">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+          </div>
+          <p class="mission-wrapper-dropdown-content" data-key="our-mission-explanation"></p>  
+        </div>
+        <div class="mission-main-content">
+          <div class="mission-main-content-header">
+            <div style="display: flex; align-items: center;">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg></span>
+              <span class="mission-wrapper-dropdown-title" data-key="our-vision"></span>
+            </div>
+            <div class="mission-wrapper-dropdown-arrow-content">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+          </div>
+          <p class="mission-wrapper-dropdown-content" data-key="our-vision-explanation"></p>  
+        </div>
+        <div class="mission-main-content">
+          <div class="mission-main-content-header">
+            <div style="display: flex; align-items: center;">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"/></svg></span>
+              <span class="mission-wrapper-dropdown-title" data-key="why-invest-us"></span>
+            </div>
+            <div class="mission-wrapper-dropdown-arrow-content">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+          </div>
+          <p class="mission-wrapper-dropdown-content" data-key="why-invest-us-explanation"></p>  
+        </div>
+        <div class="mission-main-content">
+          <div class="mission-main-content-header">
+            <div style="display: flex; align-items: center;">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"/><path d="M15 7h6v6"/></svg></span>
+              <span class="mission-wrapper-dropdown-title" data-key="investment-highlights"></span>
+            </div>
+            <div class="mission-wrapper-dropdown-arrow-content">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+          </div>
+          <ul class="mission-wrapper-dropdown-content">
+            <li data-key="investment-highlights-li-1"></li>
+            <li data-key="investment-highlights-li-2"></li>
+            <li data-key="investment-highlights-li-3"></li>
+            <li data-key="investment-highlights-li-4"></li>
+          </ul>
+        </div>
+        <div class="contact-us-main-wrapper">
+          <div style="margin-bottom: 5px;" data-key="get-in-touch"></div>
+          <div style="font-size: 20px; margin-bottom: 5px;">
+            <span data-key="join-us-in-shaping"></span>
+            <span id="contact-us-dynamic-text-animation-content" class="contact-us-dynamic-text-animation-content"></span>
+          </div>
+          <div style="color: #aaa; font-size: 14px; margin-bottom: 5px;" data-key="get-in-touch-explanation"></div>
+          <form method="POST" style="display: flex; flex-direction: column; gap: 5px;" class="main-contact-us-form">
+            <div style="display: flex; gap: 5px;">
+              <input type="text" id="name" name="name" placeholder="Your Name" required="">
+              <input type="email" id="email" name="email" placeholder="Your Email" required="">
+            </div>
+            <textarea id="message" name="message" placeholder="Your Message" required=""></textarea>
+            <button type="submit" data-key="send-message"></button>      
+          </form>
+        </div>
+      </div>
+      <div class="kpi-main-wrapper">
+        <div class="kpi-main-content-wrapper">
+          <div class="kpi-main-content-navbar">
+            <div class="kpi-main-navbar-each-action" id="kpi-navbar-users" data-key="users"></div>
+            <div class="kpi-main-navbar-each-action" id="kpi-navbar-allergiesDetected" data-key="allergies-detected"></div>
+            <div class="kpi-main-navbar-each-action" id="kpi-navbar-corporatePartnerships" data-key="corporate-partnerships"></div>
+            <div class="kpi-main-navbar-each-action" id="kpi-navbar-aiPrompt" data-key="ai-prompt"></div>
+          </div>
+          <div class="kpi-main-content-progress-bar"></div>
+          <div class="kpi-main-circular-progress-container center">
+            <div class="progress-container" id="progress-container-users" style="display: none">
+              <svg class="progress-circle" width="360" height="360">
+                <circle class="bg-circle" cx="180" cy="180" r="160"></circle>
+                <circle class="progress progress-users" cx="180" cy="180" r="160"></circle>
+              </svg>
+              <div class="progress-number progress-number-users center"></div>
+            </div>
+            <div class="progress-container" id="progress-container-allergiesDetected" style="display: none">
+              <svg class="progress-circle" width="360" height="360">
+                <circle class="bg-circle" cx="180" cy="180" r="160"></circle>
+                <circle class="progress progress-allergiesDetected" cx="180" cy="180" r="160"></circle>
+              </svg>
+              <div class="progress-number progress-number-allergiesDetected center"></div>
+            </div>
+            <div class="progress-container" id="progress-container-corporatePartnerships" style="display: none">
+              <svg class="progress-circle" width="360" height="360">
+                <circle class="bg-circle" cx="180" cy="180" r="160"></circle>
+                <circle class="progress progress-corporatePartnerships" cx="180" cy="180" r="160"></circle>
+              </svg>
+              <div class="progress-number progress-number-corporatePartnerships center"></div>
+            </div>
+            <div class="progress-container" id="progress-container-aiPrompt" style="display: none">
+              <svg class="progress-circle" width="360" height="360">
+                <circle class="bg-circle" cx="180" cy="180" r="160"></circle>
+                <circle class="progress progress-aiPrompt" cx="180" cy="180" r="160"></circle>
+              </svg>
+              <div class="progress-number progress-number-aiPrompt center"></div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main-wrapper">
+    <div class="footer-download-wrapper">
+      <div class="footer-download-pre-title" data-key="footer-pre-title"></div>
+      <div class="footer-download-main-title" data-key="footer-title-1"></div>
+      <div class="footer-download-main-title" data-key="footer-title-2"></div>
+      <div class="footer-download-install-button" data-key="footer-install-app"></div>
+    </div>
+    <div class="footer-main-wrapper-final-wrapper">
+      <div>
+        <img src="/public/res/logo.png" alt="Allergy Mate" style="width: 30px; height: 30px; margin-bottom: 20px; filter: grayscale(1)">
+      </div>
+      <div data-key="footer-final-wrapper"></div>
+    </div>
+  </div>
+</body>
+</html>
